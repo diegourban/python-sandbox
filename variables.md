@@ -2,13 +2,12 @@ There is no explicit declaration, example: name = 'Diego'
 A variable only exists when you declare a value to it.
 
 Variables are Snake_Case, example: my_age_now = 20
-
-Types: Integer, Float, Long, Complex, String, List
-Integer: age = 50
-Float: salary = 7500.50
-Long: size = 10L
-Complex: total = 7500.50j
-String: name = "Diego" or name = 'Diego'
+- Types: Integer, Float, Long, Complex, String, List
+- Integer: age = 50
+- Float: salary = 7500.50
+- Long: size = 10L
+- Complex: total = 7500.50j
+- String: name = "Diego" or name = 'Diego'
 
 You can declare more than one variable at time.
 ```
