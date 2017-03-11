@@ -6,6 +6,18 @@ Min and Max:
 
 Sort:
 ```
-names = ('Leonardo', 'Flávio', 'Rômulo')
-sorted(names)
+>>> names = ('Leonardo', 'Flávio', 'Rômulo')
+>>> sorted(names)
+```
+
+Length:
+```
+>>> name = 'Diego Leonardo Urban'
+>>> length = len(name)
+```
+
+Import function from file:
+```
+>>> from library import *
+>>> generate_name('Diego Leonardo Urban')
 ```
