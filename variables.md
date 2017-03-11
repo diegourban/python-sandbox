@@ -36,3 +36,19 @@ Lists:
 >>> names.remove(10)
 >>> names.remove('José')
 ```
+
+Tuple(unmodifiable list):
+```
+>>> types = ('beginner', 'normal', 'advanced')
+>>> types[0]
+>>> types[0:2]
+>>> states = ('RJ', 'SP') + tuple(['MG', 'ES'])
+```
+
+Dictionary:
+```
+>>> invite_values = {'vip' : 60, 'normal' : 40, 'half' : 20}
+>>> invite_values['normal']
+>>> invite_values.keys()
+>>> invite_values.values()
+```
