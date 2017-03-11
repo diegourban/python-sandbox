@@ -15,7 +15,7 @@ You can declare more than one variable at time.
 >>> name , cpf = 'Diego', 123456789
 ```
 
-Slice and concat:
+Slice, concat and print:
 ```
 >>> name = 'Diego Leonardo Urban'
 >>> first_name = name[0:5]
@@ -31,4 +31,8 @@ Lists:
 >>> names[0]
 >>> names[0:2]
 >>> names[0:]
+>>> names.append('Joana')
+>>> names.append(10)
+>>> names.remove(10)
+>>> names.remove('José')
 ```
