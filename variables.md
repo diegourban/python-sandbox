@@ -2,7 +2,8 @@ There is no explicit declaration, example: name = 'Diego'
 A variable only exists when you declare a value to it.
 
 Variables are Snake_Case, example: my_age_now = 20
-- Types: Integer, Float, Long, Complex, String, List
+
+Types: Integer, Float, Long, Complex, String, List
 - Integer: age = 50
 - Float: salary = 7500.50
 - Long: size = 10L
@@ -22,4 +23,12 @@ Slice and concat:
 >>> age = 28
 >>> 'My first name is ' + first_name + ', age ' + age // will cause type error
 >>> print 'My first name is %s, age %s' % (name, age)
+```
+
+Lists:
+```
+>>> names = ['Diego', 'Maria', 'José']
+>>> names[0]
+>>> names[0:2]
+>>> names[0:]
 ```
