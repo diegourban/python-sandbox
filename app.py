@@ -33,6 +33,13 @@ def search(names):
     else:
         print 'Name %s is not registered' % (name)
 
+def find_regex(names):
+    print('Type the regular expression')
+    regex = raw_input()
+    names_concat = ' '.join(names)
+    results = re.findall(regex, names_concat)
+    print(results)
+
 def menu():
     names = []
     choice = ''
