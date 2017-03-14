@@ -7,6 +7,13 @@ class Profile(object):
 		self.name = name
 		self.telephone = telephone
 		self.company = company
+		self.__likes = 0
+
+	def like(self):
+		self.__likes += 1
+
+	def likes(self):
+		return self.__likes
 
 	def print(self):
-		print 'Name: %s, Telephone: %s, Company: %s' % (self.name, self.telephone, self.company)
+		print 'Name: %s, Telephone: %s, Company: %s, Likes: %s' % (self.name, self.telephone, self.company, self.__likes)
