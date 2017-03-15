@@ -21,6 +21,8 @@ class Profile(object):
 		profiles = []
 		for line in file:
 			values = line.split(',')
+			if(len(values) is not 3):
+				raise ValueError('The must have 3 values')
 			profiles.append(clazz(*values))
 		file.close()
 		return profiles
