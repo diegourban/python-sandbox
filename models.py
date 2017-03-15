@@ -15,13 +15,23 @@ class Profile(object):
 	def likes(self):
 		return self.__likes
 
-	def print(self):
+	@classmethod
+	def generate_profiles(clazz, file_name):
+		file = open(file_name, 'r')
+		profiles = []
+		for line in file:
+			values = line.split(',')
+			profiles.append(clazz(*values))
+		file.close()
+		return profiles
+
+	def print_info(self):
 		print 'Name: %s, Telephone: %s, Company: %s, Likes: %s' % (self.name, self.telephone, self.company, self.__likes)
 
 class Profile_Vip(Profile):
 	'User vip profile class'
 
-	def __init__(self, name, telephone, company, nickname):
+	def __init__(self, name, telephone, company, nickname=''):
 		super(Profile_Vip, self).__init__(name, telephone, company)
 		self.nickname = nickname
 
