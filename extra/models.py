@@ -28,7 +28,7 @@ class Profile(object):
 		return profiles
 
 	def print_info(self):
-		print 'Name: %s, Telephone: %s, Company: %s, Likes: %s' % (self.name, self.telephone, self.company, self.__likes)
+		print('Name: {}, Telephone: {}, Company: {}, Likes: {}').format(self.name, self.telephone, self.company, self.__likes)
 
 class Profile_Vip(Profile):
 	'User vip profile class'

@@ -1,5 +1,5 @@
 # python-sandbox
 Sandbox for Python
 
-## Requirements
-* Python 3
+## Usage
+Run `adivinhacao.py`

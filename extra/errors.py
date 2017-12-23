@@ -1,4 +1,4 @@
-from models import *
+from extra.models import *
 
 file = None
 
@@ -6,7 +6,7 @@ try:
     file = open('not-exists.csv','r')
     print('file open')
     values = file.readLine().split(':')
-    Profile(*valores)
+    Profile(*values)
     file.close()
 except IOError as error:
     print('Error reading file')
