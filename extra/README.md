@@ -2,4 +2,4 @@
 Sandbox for Python
 
 ## Usage
-Some simples examples, just run any of the files
+Some simple examples, just run any of the files

@@ -2,4 +2,4 @@
 Sandbox for Python
 
 ## Usage
-Run `adivinhacao.py`
+Run `jogos.py`
