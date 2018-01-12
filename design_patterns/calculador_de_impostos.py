@@ -22,3 +22,9 @@ if __name__ == '__main__':
     print("ICPP e IKCV")
     calculador.realiza_calculo(orcamento, ICPP())
     calculador.realiza_calculo(orcamento, IKCV())
+
+    print("ISS com ICMS")
+    calculador.realiza_calculo(orcamento, ISS(ICMS()))
+
+    print("ICPP com IKCV")
+    calculador.realiza_calculo(orcamento, ICPP(IKCV()))
