@@ -18,7 +18,7 @@ class Item(object):
 
 class Nota_fiscal(object):
 
-    def __init__(self, razao_social, cnpj, itens, data_de_emissao=date.today(), detalhes=''):
+    def __init__(self, razao_social, cnpj, itens, data_de_emissao=date.today(), detalhes='', observadores=[]):
         self.__razao_social = razao_social
         self.__cnpj = cnpj
         self.__data_de_emissao = data_de_emissao
@@ -26,6 +26,9 @@ class Nota_fiscal(object):
             raise Exception('Detalhes da nota não pode ter mais do que 20 caracteres')
         self.__detalhes = detalhes
         self.__itens = itens
+
+        for observador in observadores:
+            observador(self)
 
     @property
     def razao_social(self):
@@ -44,6 +47,8 @@ class Nota_fiscal(object):
         return self.__detalhes
 
 if __name__ == '__main__':
+    from observadores import (envia_por_email,
+                              salva_no_banco, imprime)
 
     itens=[
         Item(
@@ -60,8 +65,8 @@ if __name__ == '__main__':
         'FHSA Limitada',
         '012345678901234',
         itens,
-        date.today(),
-        ''
+        observadores=[envia_por_email,
+                      salva_no_banco, imprime]
     )
 
     # usando nosso Builder.
